@@ -1,0 +1,124 @@
+.team {
+  background-color: var(--background-light);
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+ 
+}
+
+.section-title h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  background: #FF6B35 ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  
+}
+
+#kiran {
+  font-size: 1.2rem;
+  color: #FF6B35 !important;
+  margin-top: 10px;
+}
+
+
+
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.team-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  text-align: center;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.member-image {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+
+.member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.team-card:hover .member-image img {
+  transform: scale(1.1);
+}
+
+.social-links {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(transparent, rgba(255, 107, 53, 0.9));
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  transition: var(--transition);
+}
+
+.team-card:hover .social-links {
+  bottom: 0;
+}
+
+.social-links a {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.social-links a:hover {
+  background: var(--primary-color);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.member-info {
+  padding: 25px 20px;
+}
+
+.member-info h3 {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+  color: var(--text-dark);
+}
+
+.role {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.bio {
+  color: var(--text-light);
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
