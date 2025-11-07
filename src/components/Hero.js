@@ -1,10 +1,14 @@
-import React from 'react';
-import { FaPlayCircle } from 'react-icons/fa';
-import './Hero.css';
+import React from "react";
+import { FaPlayCircle } from "react-icons/fa";
+import "./Hero.css";
+import ComingSoonPage from "./ComingSoonPage"; // 👈 import it here
 
 const Hero = () => {
   return (
-    <section id="home" className="hero">
+    <section id="home" className="hero" style={{ position: "relative" }}>
+      {/* 🔥 Coming Soon Overlay */}
+      <ComingSoonPage />
+
       <div className="hero-background">
         <div className="hero-overlay"></div>
       </div>
@@ -17,8 +21,9 @@ const Hero = () => {
               Share Your Ride, <span>Save Big</span>
             </h1>
             <p className="hero-description">
-              Yuva brings you an easy, affordable, and eco-friendly ride-sharing experience. 
-              Book rides, share rides — all in one app. Join the revolution of smart commuting today!
+              Yuva brings you an easy, affordable, and eco-friendly
+              ride-sharing experience. Book rides, share rides — all in one
+              app. Join the revolution of smart commuting today!
             </p>
             <div className="hero-buttons">
               <button className="btn btn-primary">Get Started</button>
